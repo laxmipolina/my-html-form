@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Information</legend>
+        <form>
+            <label>Name</label><br/>
+            <input type="text" title="enter atleast 3 letter" placeholder="Enter your name" pattern="[a-zA-Z]{3,40}"/><br/>
+            <label>Email</label><br/>
+            <input type="email"  placeholder="enter email"/><br/>
+            <label>Password</label><br/>
+            <input type="password" placeholder="enter password"/><br/>
+            <label>Contact</label><br/>
+            <input type="tel" pattern="[0-9]{10}" placeholder="enter phone number" title="enter valid 10 digit number"/><br/>
+            <label>Message</label><br/>
+            <textarea></textarea><br/>
+            <label>Gender</label><br/>
+            <input type="radio" value="male" name="gender"/>Male
+            <input type="radio" value="female" name="gender"/>Female<br/>
+            <label>Courses</label><br/>
+            <input type="checkbox" value="c" name="pl"/>C<br/>
+            <input type="checkbox" value="java" name="pl"/>Java<br/>
+            <input type="checkbox" value="html" name="pl"/>Html<br/>
+            <input type="checkbox" value="CSS" name="pl"/>Css<br/>
+            <label>Upload Photo</label><br/>
+            <input type="file" accept=".pdf"/><br/>
+            <label>Country</label><br/>
+            <select>
+                <option>----select country----</option>
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="korea">Korea</option>
+                <option value="uk">UK</option>
+                <option>Switzerland</option>
+            </select><br/>
+            <label>Course</label><br/>
+            <select>
+                <optgroup label="Frontend">
+                    <option>HTML</option>
+                    <option>CSS</option>
+                    <option>JS</option>
+                </optgroup>
+                <optgroup >
+                    <option>Node</option>
+                    <option>PHP</option>
+                    <option>MYSQL</option>
+                </optgroup>
+            </select>
+
+
+            <br/><button type="submit">Save</button>
+            <input type="submit"/>
+        </form>
+    </fieldset>
+</body>
+</html>
